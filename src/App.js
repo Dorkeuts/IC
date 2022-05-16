@@ -13,11 +13,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TodoList />} />
         <Route path="/ajout" element={<AjoutTache />} />
+        <Route path="/" element={<TodoList />} />
         <Route path="/:id" element={<ModifTache />} />
 
-      </Routes>
+      </Routes> 
     </BrowserRouter>
   );
 }
