@@ -1,9 +1,11 @@
-import { BrowserRouter as Link } from 'react-router-dom';
+import React, { Component } from 'react';
+const Taches = ["tache1", "tache2", "tache3"];
+
+const listTaches = Taches.map((number) =>
+    <li>{number}</li>
+  );
 export default function TodoList() {
     return (
-        <div>
-            <h1>Liste !</h1>
-            <Link to={'/ajout'} >Ajouter</Link>
-        </div>
+        <ul>{listTaches}</ul>
     )
 }

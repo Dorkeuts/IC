@@ -9,6 +9,8 @@ import TodoList from "./pages/todolist"
 import AjoutTache from './pages/ajoutTache';
 import ModifTache from './pages/modifTache';
 
+const Taches = ["tache1", "tache2", "tache3"];
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +18,6 @@ function App() {
         <Route path="/ajout" element={<AjoutTache />} />
         <Route path="/" element={<TodoList />} />
         <Route path="/:id" element={<ModifTache />} />
-
       </Routes> 
     </BrowserRouter>
   );
